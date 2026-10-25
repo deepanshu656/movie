@@ -1,0 +1,43 @@
+{
+  "types": [
+    "Movies & series",
+    "Movies",
+    "Series"
+  ],
+  "categories": [
+    "All categories",
+    "Cartoon",
+    "Anime",
+    "Action",
+    "Comedy",
+    "Adventure",
+    "Fantasy"
+  ],
+  "networks": [
+    "All networks",
+    "TV Asahi",
+    "Toho",
+    "Netflix",
+    "Crunchyroll",
+    "Disney+",
+    "Hulu"
+  ],
+  "years": [
+    "All years",
+    "2025",
+    "2024",
+    "2023",
+    "2014",
+    "2009",
+    "2002",
+    "2001",
+    "1999",
+    "1996"
+  ],
+  "sortOptions": [
+    "Recently added",
+    "Rating: High to Low",
+    "Year: Newest first",
+    "Alphabetical"
+  ]
+}

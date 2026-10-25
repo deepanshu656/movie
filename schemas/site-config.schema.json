@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SiteConfig",
+  "description": "Configuration schema for MULTI MOVIES branding, navigation dropdowns, and utilities",
+  "type": "object",
+  "required": ["brand", "navigation"],
+  "properties": {
+    "brand": {
+      "type": "object",
+      "required": ["title", "badgeText", "logoText"],
+      "properties": {
+        "title": { "type": "string", "default": "MULTI MOVIES" },
+        "badgeText": { "type": "string", "default": "MULTI" },
+        "logoText": { "type": "string", "default": "MOVIES" },
+        "badgeBgColor": { "type": "string", "default": "#E50914" }
+      }
+    },
+    "navigation": {
+      "type": "object",
+      "required": ["pillMenu", "utilities"],
+      "properties": {
+        "pillMenu": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label"],
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "hasDropdown": { "type": "boolean", "default": false },
+              "isActive": { "type": "boolean", "default": false },
+              "dropdownItems": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "utilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "icon", "tooltip"],
+            "properties": {
+              "id": { "type": "string" },
+              "icon": { "type": "string" },
+              "tooltip": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

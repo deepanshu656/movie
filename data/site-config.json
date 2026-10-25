@@ -1,0 +1,113 @@
+{
+  "brand": {
+    "title": "MULTI MOVIES",
+    "badgeText": "MULTI",
+    "logoText": "MOVIES",
+    "badgeBgColor": "#E50914"
+  },
+  "navigation": {
+    "pillMenu": [
+      {
+        "id": "home",
+        "label": "Home",
+        "hasDropdown": false,
+        "isActive": true
+      },
+      {
+        "id": "genre",
+        "label": "Genre",
+        "hasDropdown": true,
+        "isActive": false,
+        "dropdownItems": [
+          "Action",
+          "Cartoon",
+          "Crime",
+          "Drama",
+          "Fantasy",
+          "Horror",
+          "Mystery",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "id": "category",
+        "label": "Category",
+        "hasDropdown": true,
+        "isActive": false,
+        "dropdownItems": [
+          "Trending Series",
+          "Blockbusters",
+          "Top 10 Today",
+          "New Releases",
+          "Award Winners"
+        ]
+      },
+      {
+        "id": "ott",
+        "label": "OTT",
+        "hasDropdown": true,
+        "isActive": false,
+        "dropdownItems": [
+          "Netflix",
+          "HBO Max",
+          "Disney+ Hotstar",
+          "Prime Video",
+          "Apple TV+"
+        ]
+      },
+      {
+        "id": "gen-z",
+        "label": "Gen Z",
+        "hasDropdown": true,
+        "isActive": false,
+        "dropdownItems": [
+          "Viral TikTok Hits",
+          "Anime Sensation",
+          "K-Drama Craze",
+          "Cyberpunk",
+          "Teen Mystery"
+        ]
+      },
+      {
+        "id": "collection",
+        "label": "Collection",
+        "hasDropdown": true,
+        "isActive": false,
+        "dropdownItems": [
+          "DC Universe",
+          "Marvel Cinematic",
+          "Dark Fantasy",
+          "Crime Investigation"
+        ]
+      },
+      {
+        "id": "sos",
+        "label": "SOS",
+        "hasDropdown": true,
+        "isActive": false,
+        "dropdownItems": [
+          "Can't Decide? Roll Dice",
+          "Quick Binge (<30m)",
+          "Top Rated Hidden Gems"
+        ]
+      }
+    ],
+    "utilities": [
+      {
+        "id": "search",
+        "icon": "search",
+        "tooltip": "Search movies, series, or actors"
+      },
+      {
+        "id": "bookmark",
+        "icon": "bookmark",
+        "tooltip": "My Watchlist & Saved"
+      },
+      {
+        "id": "filter",
+        "icon": "tune",
+        "tooltip": "Filters & Schema Manager"
+      }
+    ]
+  }
+}

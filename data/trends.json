@@ -1,0 +1,116 @@
+{
+  "sectionTabs": [
+    { "id": "trends", "label": "TRENDS NOW", "isActive": true },
+    { "id": "popular", "label": "POPULAR", "isActive": false },
+    { "id": "premiers", "label": "PREMIERS", "isActive": false },
+    { "id": "favorit", "label": "FAVORIT", "isActive": false }
+  ],
+  "genreFilters": [
+    { "id": "horor", "label": "Horor", "isActive": true },
+    { "id": "comedy", "label": "Comedy", "isActive": false },
+    { "id": "anime", "label": "Anime", "isActive": false },
+    { "id": "romans", "label": "Romans", "isActive": false },
+    { "id": "action", "label": "Action", "isActive": false },
+    { "id": "adventure", "label": "Adventure", "isActive": false },
+    { "id": "cartoon", "label": "Cartoon", "isActive": false },
+    { "id": "crime", "label": "Crime", "isActive": false }
+  ],
+  "movies": [
+    {
+      "id": "movie-pengantin-iblis",
+      "title": "Pengantin Iblis",
+      "rating": 4,
+      "year": 2024,
+      "duration": "1j 42m",
+      "genre": "Horor",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_pengantin_iblis.jpg",
+      "synopsis": "Kisah mengerikan seorang wanita yang terjebak dalam perjanjian gaib kuno demi kesembuhan anaknya, menjadi mempelai iblis di alam kegelapan.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "movie-siksa-neraka",
+      "title": "Siksa Neraka",
+      "rating": 4,
+      "year": 2023,
+      "duration": "1j 38m",
+      "genre": "Horor",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_siksa_neraka.jpg",
+      "synopsis": "Empat bersaudara hanyut dalam arus sungai dan terbangun di alam siksa neraka penuh pembalasan atas dosa-dosa tersembunyi semasa hidup.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "movie-dreadout",
+      "title": "DreadOut",
+      "rating": 4,
+      "year": 2019,
+      "duration": "1j 37m",
+      "genre": "Horor",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_dreadout.jpg",
+      "synopsis": "Sekelompok siswa SMA berusaha meningkatkan popularitas medsos mereka dengan menjelajahi gedung apartemen angker dan membuka gerbang portal iblis.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "movie-annabelle",
+      "title": "Annabelle",
+      "rating": 4,
+      "year": 2019,
+      "duration": "1j 46m",
+      "genre": "Horor",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_annabelle.jpg",
+      "synopsis": "Boneka iblis Annabelle membangkitkan arwah-arwah jahat di ruang artefak mistis keluarga Warren, mengincar anak perempuan mereka.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "cartoon-spider-verse",
+      "title": "Spider-Man: Across the Spider-Verse",
+      "rating": 5,
+      "year": 2023,
+      "duration": "2j 20m",
+      "genre": "Cartoon",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_spider_verse.jpg",
+      "synopsis": "Miles Morales catapults across the Multiverse to protect its very existence.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/cqGjhVJWtEg?autoplay=1"
+    },
+    {
+      "id": "cartoon-arcane",
+      "title": "Arcane: League of Legends",
+      "rating": 5,
+      "year": 2021,
+      "duration": "40 min",
+      "genre": "Cartoon",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_arcane.jpg",
+      "synopsis": "The origins of two iconic League champions in Piltover and Zaun.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/fXmAurh012s?autoplay=1"
+    },
+    {
+      "id": "cartoon-inside-out-2",
+      "title": "Inside Out 2",
+      "rating": 4,
+      "year": 2024,
+      "duration": "1j 36m",
+      "genre": "Cartoon",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_inside_out_2.jpg",
+      "synopsis": "Joy and the emotions meet Anxiety and a whole new crew of feelings.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/LEjhY15eCx0?autoplay=1"
+    },
+    {
+      "id": "cartoon-despicable-me-4",
+      "title": "Despicable Me 4",
+      "rating": 4,
+      "year": 2024,
+      "duration": "1j 34m",
+      "genre": "Cartoon",
+      "category": "trends",
+      "posterUrl": "assets/images/poster_despicable_me_4.jpg",
+      "synopsis": "Gru and his family go into hiding when a new villain targets them.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/qQlr9-rF32A?autoplay=1"
+    }
+  ]
+}

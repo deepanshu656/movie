@@ -1,0 +1,50 @@
+{
+  "sectionTitle": "CARTOON & ANIMATION HITS",
+  "badge": "FAMILY & GEN Z FAVORITES",
+  "items": [
+    {
+      "id": "cartoon-spider-verse",
+      "title": "Spider-Man: Across the Spider-Verse",
+      "rating": 8.7,
+      "year": 2023,
+      "duration": "2j 20m",
+      "genre": "Cartoon / Animation",
+      "posterUrl": "assets/images/poster_spider_verse.jpg",
+      "synopsis": "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/cqGjhVJWtEg?autoplay=1"
+    },
+    {
+      "id": "cartoon-arcane",
+      "title": "Arcane: League of Legends",
+      "rating": 9.0,
+      "year": 2021,
+      "duration": "40 min",
+      "genre": "Cartoon / Animation",
+      "posterUrl": "assets/images/poster_arcane.jpg",
+      "synopsis": "Set in the utopian region of Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions-and the power that will tear them apart.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/fXmAurh012s?autoplay=1"
+    },
+    {
+      "id": "cartoon-inside-out-2",
+      "title": "Inside Out 2",
+      "rating": 7.8,
+      "year": 2024,
+      "duration": "1j 36m",
+      "genre": "Cartoon / Animation",
+      "posterUrl": "assets/images/poster_inside_out_2.jpg",
+      "synopsis": "Joy, Sadness, Anger, Fear and Disgust are managing a successful operation by all accounts until Anxiety shows up with an all-new crew of emotions.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/LEjhY15eCx0?autoplay=1"
+    },
+    {
+      "id": "cartoon-despicable-me-4",
+      "title": "Despicable Me 4",
+      "rating": 7.3,
+      "year": 2024,
+      "duration": "1j 34m",
+      "genre": "Cartoon / Animation",
+      "posterUrl": "assets/images/poster_despicable_me_4.jpg",
+      "synopsis": "Gru, Lucy, Margo, Edith, and Agnes welcome a new member to the family, Gru Jr., who is intent on tormenting his dad. A new nemesis emerges, forcing the family into hiding.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/qQlr9-rF32A?autoplay=1"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "searchQuery": "shinchan",
+  "totalMatches": 33,
+  "subtitle": "33 matching titles. Explore by category, network, year, or a title you love.",
+  "items": [
+    {
+      "id": "shinchan-spinoff",
+      "title": "Shinchan Spin-off",
+      "rating": 7.0,
+      "year": 2025,
+      "type": "Series",
+      "category": "Cartoon",
+      "network": "TV Asahi",
+      "duration": "24 min",
+      "posterUrl": "assets/images/poster_shinchan_spinoff.jpg",
+      "synopsis": "Shinnosuke embarks on hilarious intergalactic misadventures with strange aliens in Kasukabe.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "shinchan-super-hot-spicy-dancers",
+      "title": "Shinchan the Movie: Super Hot Kasukabe Dancers",
+      "rating": 6.2,
+      "year": 2025,
+      "type": "Movie",
+      "category": "Cartoon",
+      "network": "Toho",
+      "duration": "1j 38m",
+      "posterUrl": "assets/images/poster_shinchan_spicy_dancers.jpg",
+      "synopsis": "The Kasukabe Defense Force takes on a festive spicy samba dance competition filled with crazy twists.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "shinchan-animal-kingdom",
+      "title": "Shinchan Kasukabe Animal Kingdom",
+      "rating": 6.9,
+      "year": 2009,
+      "type": "Movie",
+      "category": "Cartoon",
+      "network": "TV Asahi",
+      "duration": "1j 37m",
+      "posterUrl": "assets/images/poster_shinchan_animal_kingdom.jpg",
+      "synopsis": "Hiroshi and Misa drink a strange potion turning Kasukabe residents into wild animals, and Shinchan must save them.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "shinchan-warring-states",
+      "title": "Shinchan The Battle of the Warring States",
+      "rating": 7.3,
+      "year": 2002,
+      "type": "Movie",
+      "category": "Cartoon",
+      "network": "TV Asahi",
+      "duration": "1j 35m",
+      "posterUrl": "assets/images/poster_shinchan_warring_states.jpg",
+      "synopsis": "Shinnosuke travels back in time to feudal Sengoku Japan and helps a noble samurai protect his castle.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "shinchan-adult-empire",
+      "title": "Shinchan: The Adult Empire Strikes Back",
+      "rating": 8.2,
+      "year": 2001,
+      "type": "Movie",
+      "category": "Cartoon",
+      "network": "Toho",
+      "duration": "1j 29m",
+      "posterUrl": "assets/images/poster_shinchan_adult_empire.jpg",
+      "synopsis": "A mysterious organization uses 20th-century nostalgia to hypnotize adults, and the kids must fight to reclaim the future.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "shinchan-hot-springs",
+      "title": "Shinchan: Explosion! The Hot Spring's Battle",
+      "rating": 6.4,
+      "year": 1999,
+      "type": "Movie",
+      "category": "Cartoon",
+      "network": "TV Asahi",
+      "duration": "1j 38m",
+      "posterUrl": "assets/images/poster_shinchan_hot_spring.jpg",
+      "synopsis": "The Nohara household discovers a legendary therapeutic hot spring directly beneath their floorboards.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "shinchan-henderland",
+      "title": "Shinchan: Adventure in Henderland",
+      "rating": 7.5,
+      "year": 1996,
+      "type": "Movie",
+      "category": "Cartoon",
+      "network": "TV Asahi",
+      "duration": "1j 37m",
+      "posterUrl": "assets/images/poster_shinchan_warring_states.jpg",
+      "synopsis": "Shinchan visits the bizarre amusement park Henderland and receives a magical deck of playing cards.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "shinchan-robot-dad",
+      "title": "Shinchan: Serious Battle! Robot Dad",
+      "rating": 7.9,
+      "year": 2014,
+      "type": "Movie",
+      "category": "Cartoon",
+      "network": "Toho",
+      "duration": "1j 36m",
+      "posterUrl": "assets/images/poster_shinchan_adult_empire.jpg",
+      "synopsis": "Hiroshi goes to an unusual massage parlor and returns as a powerful cyborg robot father.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    }
+  ]
+}

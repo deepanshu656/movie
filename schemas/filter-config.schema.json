@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FilterConfigSchema",
+  "description": "Schema for the search and catalog filter bar dropdown options",
+  "type": "object",
+  "required": ["types", "categories", "networks", "years", "sortOptions"],
+  "properties": {
+    "types": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "networks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "years": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sortOptions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

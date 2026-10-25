@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TrendsSchema",
+  "description": "Schema for trending movies section including tabs, genre filters, and movie posters",
+  "type": "object",
+  "required": ["sectionTabs", "genreFilters", "movies"],
+  "properties": {
+    "sectionTabs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "isActive": { "type": "boolean", "default": false }
+        }
+      }
+    },
+    "genreFilters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "isActive": { "type": "boolean", "default": false }
+        }
+      }
+    },
+    "movies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "rating", "posterUrl"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "rating": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 5,
+            "default": 4
+          },
+          "year": { "type": "integer" },
+          "duration": { "type": "string" },
+          "genre": { "type": "string" },
+          "category": { "type": "string", "description": "e.g., trends, popular, premiers, favorit" },
+          "posterUrl": { "type": "string" },
+          "synopsis": { "type": "string" },
+          "trailerUrl": { "type": "string" }
+        }
+      }
+    }
+  }
+}

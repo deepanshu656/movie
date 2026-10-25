@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CartoonSectionSchema",
+  "description": "Schema for the Cartoon & Animation showcase section in the movie streaming portal",
+  "type": "object",
+  "required": ["sectionTitle", "badge", "items"],
+  "properties": {
+    "sectionTitle": { "type": "string", "default": "CARTOON & ANIMATION HITS" },
+    "badge": { "type": "string", "default": "KIDS & FAMILY FAVORITES" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "rating", "year", "duration", "genre", "posterUrl"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "rating": { "type": "number", "minimum": 0, "maximum": 10 },
+          "year": { "type": "integer" },
+          "duration": { "type": "string" },
+          "genre": { "type": "string", "default": "Cartoon" },
+          "posterUrl": { "type": "string" },
+          "synopsis": { "type": "string" },
+          "trailerUrl": { "type": "string" }
+        }
+      }
+    }
+  }
+}

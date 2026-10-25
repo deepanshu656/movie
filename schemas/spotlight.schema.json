@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SpotlightMovieSchema",
+  "description": "Schema for bottom featured spotlight movie banner",
+  "type": "object",
+  "required": ["id", "title", "subtitle", "year", "duration", "genre", "rating", "posterUrl"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "subtitle": { "type": "string", "description": "e.g., FILM HOROR AWAL TAHUN 2025" },
+    "year": { "type": "integer" },
+    "duration": { "type": "string", "description": "e.g., 1j 31m" },
+    "genre": { "type": "string", "default": "Horor" },
+    "rating": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5,
+      "default": 4
+    },
+    "posterUrl": { "type": "string" },
+    "backgroundSceneUrl": { "type": "string" },
+    "synopsis": { "type": "string" },
+    "actionLabel": { "type": "string", "default": "PLAY NOW" },
+    "trailerUrl": { "type": "string" }
+  }
+}

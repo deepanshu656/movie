@@ -1,0 +1,37 @@
+{
+  "sectionTitle": "CONTINUE WATCHING",
+  "seeMoreLabel": "SEE MORE",
+  "seeMoreUrl": "#continue-watching",
+  "items": [
+    {
+      "id": "cw-malam-pencabut-nyawa",
+      "title": "Malam Pencabut Nyawa",
+      "thumbnailUrl": "assets/images/thumb_malam_nyawa.jpg",
+      "progressPercentage": 85,
+      "currentTime": "01:23:10",
+      "totalDuration": "01:38:00",
+      "synopsis": "Respat, seorang remaja yang menderita insomnia, mendapati mimpinya dimasuki sosok gaib mengerikan yang mencabut nyawa korbannya di dunia nyata.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "cw-jailangkung",
+      "title": "Jailangkung: Sandekala",
+      "thumbnailUrl": "assets/images/thumb_jailangkung.jpg",
+      "progressPercentage": 65,
+      "currentTime": "01:04:30",
+      "totalDuration": "01:40:00",
+      "synopsis": "Keluarga Adrian berlibur ke luar kota dan anak bungsu mereka hilang saat senja sandekala di sebuah hutan mistis yang menyimpan kutukan boneka jelangkung.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    },
+    {
+      "id": "cw-pengabdi-setan",
+      "title": "Pengabdi Setan",
+      "thumbnailUrl": "assets/images/thumb_pengabdi_setan.jpg",
+      "progressPercentage": 90,
+      "currentTime": "01:32:00",
+      "totalDuration": "01:47:00",
+      "synopsis": "Setelah sang ibu meninggal secara misterius usai sakit berkepanjangan, keluarga Rini dihantui teror arwah ibu yang ternyata terikat sekte pengabdi setan.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/84qF8R1RjX4?autoplay=1"
+    }
+  ]
+}

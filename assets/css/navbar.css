@@ -1,0 +1,247 @@
+/* MULTI MOVIES Navigation Header */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(5, 2, 4, 0.85) 0%, rgba(5, 2, 4, 0.4) 60%, transparent 100%);
+}
+
+/* Brand Logo (MULTI MOVIES) */
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.multimovies-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  user-select: none;
+  transition: transform var(--transition-fast);
+}
+
+.multimovies-brand:hover {
+  transform: scale(1.03);
+}
+
+.brand-badge {
+  background-color: var(--red-primary);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.15rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.6);
+}
+
+.brand-text {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Floating Center Pill Menu */
+.center-nav-pill-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(20, 10, 14, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-pill);
+  padding: 0.3rem 0.6rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pill-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pill-menu-item {
+  position: relative;
+}
+
+.pill-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-pill);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #c7c1c3;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pill-nav-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.pill-nav-link.active {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.chevron-down-icon {
+  font-size: 0.65rem;
+  opacity: 0.7;
+  transition: transform var(--transition-fast);
+}
+
+.pill-menu-item:hover .chevron-down-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu Overlay */
+.pill-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: rgba(16, 7, 10, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0;
+  min-width: 190px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85), 0 0 20px rgba(229, 9, 20, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 120;
+}
+
+/* Invisible hover bridge to prevent gap-mouseout */
+.pill-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: transparent;
+}
+
+/* Show dropdown on hover OR when toggled open via click */
+.pill-menu-item:hover .pill-dropdown-menu,
+.pill-menu-item.dropdown-open .pill-dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-item-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  color: #d1c7ca;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+}
+
+.dropdown-item-link:hover {
+  background: rgba(229, 9, 20, 0.18);
+  color: #ffffff;
+  border-left-color: var(--red-primary);
+  padding-left: 1.5rem;
+}
+
+/* Right Utility Buttons (Search, Bookmark, Filter) */
+.right-utilities-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.utility-circle-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.utility-circle-btn:hover {
+  background: rgba(229, 9, 20, 0.25);
+  border-color: var(--red-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+
+.utility-circle-btn svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+/* Hamburger for Mobile Viewports */
+.mobile-hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.mobile-hamburger-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all var(--transition-normal);
+}
+
+@media (max-width: 992px) {
+  .site-header {
+    padding: 1rem 1.5rem;
+  }
+  .center-nav-pill-wrapper {
+    display: none;
+  }
+  .mobile-hamburger-btn {
+    display: flex;
+  }
+}

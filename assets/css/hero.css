@@ -1,0 +1,361 @@
+/* MULTI MOVIES Hero Section (Lucifer) */
+.hero-showcase {
+  position: relative;
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5rem 4rem 4rem;
+  overflow: hidden;
+  background-color: #050204;
+}
+
+/* Background Backdrop Layer */
+.hero-backdrop-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-backdrop-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  transition: opacity 0.4s ease-in-out, transform 0.5s ease-out;
+}
+
+/* Deep cinematic gradients ensuring text legibility */
+.hero-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(90deg, #060204 0%, #060204 32%, rgba(6, 2, 4, 0.88) 44%, rgba(6, 2, 4, 0.3) 62%, transparent 75%),
+    linear-gradient(180deg, rgba(6, 2, 4, 0.75) 0%, transparent 25%, transparent 65%, rgba(6, 2, 4, 0.95) 92%, #060204 100%);
+  pointer-events: none;
+}
+
+/* Left-Aligned Main Hero Content */
+.hero-main-content {
+  position: relative;
+  z-index: 10;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Tagline Badge ("— LATEST UPDATES") */
+.hero-tagline-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.hero-red-dash {
+  width: 14px;
+  height: 3px;
+  background-color: var(--red-primary);
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(229, 9, 20, 0.8);
+}
+
+.hero-tagline-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  color: #b8b2b5;
+  text-transform: uppercase;
+}
+
+/* Massive Title ("Lucifer") */
+.hero-series-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.4rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.0;
+  letter-spacing: -0.5px;
+  margin: 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+  transition: transform var(--transition-fast);
+}
+
+/* Metadata Row (★ 8.4  2016  Series  45 min  1080p) */
+.hero-meta-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #cfc8ca;
+}
+
+.hero-rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hero-star-icon {
+  color: #f5b300;
+  font-size: 0.95rem;
+  filter: drop-shadow(0 0 4px rgba(245, 179, 0, 0.6));
+}
+
+.hero-meta-item {
+  color: #b5adb1;
+}
+
+.hero-quality-badge {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 4px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Synopsis Description */
+.hero-synopsis-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: #b5afb2;
+  max-width: 490px;
+  margin: 0.25rem 0 0.5rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons Row */
+.hero-action-buttons-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* 1. Explore episodes (White Pill) */
+.btn-explore-episodes {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1.65rem;
+  background-color: #ffffff;
+  color: #0a0406;
+  border-radius: var(--radius-pill);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-explore-episodes svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.btn-explore-episodes:hover {
+  background-color: #e5e5e5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* 2. More info (Translucent Dark Pill) */
+.btn-more-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1.65rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-radius: var(--radius-pill);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-more-info svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.btn-more-info:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+/* 3. Add to Watchlist Circle Button (+) */
+.btn-add-watchlist {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-add-watchlist:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Carousel Slider Controls (09 / 10 + Dashes + Arrows) */
+.hero-slider-controls {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 3.5rem;
+}
+
+.slider-index-counter {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  user-select: none;
+}
+
+.slider-current-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.slider-total-num {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #7a7376;
+}
+
+/* Segmented Dash Indicator Bars */
+.slider-dash-track {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.slider-dash {
+  width: 22px;
+  height: 2.5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.slider-dash:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scaleY(1.4);
+}
+
+.slider-dash.active {
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  transform: scaleY(1.5);
+}
+
+/* Circular Arrow Buttons (< and >) */
+.slider-nav-arrows {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slider-arrow-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1cacc;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.slider-arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.slider-arrow-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* Bottom Curved Section Peek (As shown in screenshot) */
+.bottom-peek-curved-section {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, #091524 0%, #040912 100%);
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.9), 0 -2px 15px rgba(20, 80, 160, 0.2);
+  margin-top: -1.5rem;
+  z-index: 20;
+  padding: 3rem 4rem 4rem;
+}
+
+@media (max-width: 768px) {
+  .hero-showcase {
+    padding: 6rem 1.5rem 3rem;
+  }
+  .hero-series-title {
+    font-size: 2.8rem;
+  }
+  .hero-slider-controls {
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 2rem;
+  }
+  .slider-dash {
+    width: 14px;
+  }
+  .bottom-peek-curved-section {
+    padding: 2rem 1.5rem 3rem;
+  }
+}

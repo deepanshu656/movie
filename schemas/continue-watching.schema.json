@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContinueWatchingSchema",
+  "description": "Schema for continue watching row with progress bar, scrub position, and video thumbnails",
+  "type": "object",
+  "required": ["sectionTitle", "seeMoreLabel", "items"],
+  "properties": {
+    "sectionTitle": { "type": "string", "default": "CONTINUE WATCHING" },
+    "seeMoreLabel": { "type": "string", "default": "SEE MORE" },
+    "seeMoreUrl": { "type": "string", "default": "#" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "thumbnailUrl", "progressPercentage"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "thumbnailUrl": { "type": "string" },
+          "progressPercentage": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "default": 50
+          },
+          "currentTime": { "type": "string", "description": "e.g., 01:12:40" },
+          "totalDuration": { "type": "string", "description": "e.g., 01:38:00" },
+          "videoUrl": { "type": "string" },
+          "synopsis": { "type": "string" }
+        }
+      }
+    }
+  }
+}

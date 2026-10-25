@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> MOVIES 4 U - Stream Lucifer, Series & Blockbusters</title>
+  <meta name="description"
+    content="MULTI MOVIES - Stream Lucifer, latest updates, trending TV series and movies in 1080p and 4K HDR.">
+  <meta name="keywords" content="multi movies, lucifer, netflix series, movies streaming, tv series">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MULTI MOVIES - Stream Lucifer & TV Series">
+  <meta property="og:description"
+    content="Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles. Stream on MULTI MOVIES.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23E50914'/><text x='50%' y='68%' font-size='50' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'>M</text></svg>">
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/search.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+
+<body>
+
+  <!-- Main Application Wrapper (Widescreen) -->
+  <div class="app-viewport">
+
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <!-- Brand Logo (MULTI MOVIES) -->
+      <div class="brand-container" id="brand-logo-container">
+        <!-- Rendered dynamically by app.js from data/site-config.json -->
+      </div>
+
+      <!-- Center Floating Pill Menu -->
+      <nav class="center-nav-pill-wrapper" aria-label="Main Navigation">
+        <ul class="pill-menu-list" id="pill-nav-menu">
+          <!-- Rendered dynamically by app.js from data/site-config.json -->
+        </ul>
+      </nav>
+
+      <!-- Right Utility Icons (Search, Bookmark, Filter) -->
+      <div class="right-utilities-group" id="right-utilities-container">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-hamburger-btn" id="mobile-hamburger-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- 1. SEARCH RESULTS & CATALOG VIEW (Hidden by default, shown via Cartoon nav) -->
+    <section class="search-results-page" id="search-view-container" style="display:none;">
+      <div class="search-page-header">
+        <h1 class="search-page-title" id="search-page-title">Results for “shinchan”</h1>
+        <p class="search-page-subtitle" id="search-page-subtitle">33 matching titles. Explore by category, network,
+          year, or a title you love.</p>
+      </div>
+
+      <!-- Filter Controls Bar -->
+      <div class="search-filter-bar" id="search-filter-bar">
+        <!-- SEARCH -->
+        <div class="filter-control-item search-input-item">
+          <label class="filter-control-label" for="filter-search-input">SEARCH</label>
+          <input type="text" id="filter-search-input" class="filter-control-input" value="shinchan"
+            placeholder="Search title..." />
+        </div>
+
+        <!-- TYPE -->
+        <div class="filter-control-item">
+          <label class="filter-control-label" for="filter-type-select">TYPE</label>
+          <select id="filter-type-select" class="filter-control-select">
+            <!-- Populated from data/filter-config.json -->
+          </select>
+        </div>
+
+        <!-- CATEGORY -->
+        <div class="filter-control-item">
+          <label class="filter-control-label" for="filter-category-select">CATEGORY</label>
+          <select id="filter-category-select" class="filter-control-select">
+            <!-- Populated from data/filter-config.json -->
+          </select>
+        </div>
+
+        <!-- NETWORK -->
+        <div class="filter-control-item">
+          <label class="filter-control-label" for="filter-network-select">NETWORK</label>
+          <select id="filter-network-select" class="filter-control-select">
+            <!-- Populated from data/filter-config.json -->
+          </select>
+        </div>
+
+        <!-- YEAR -->
+        <div class="filter-control-item">
+          <label class="filter-control-label" for="filter-year-select">YEAR</label>
+          <select id="filter-year-select" class="filter-control-select">
+            <!-- Populated from data/filter-config.json -->
+          </select>
+        </div>
+
+        <!-- SORT BY -->
+        <div class="filter-control-item">
+          <label class="filter-control-label" for="filter-sort-select">SORT BY</label>
+          <select id="filter-sort-select" class="filter-control-select">
+            <!-- Populated from data/filter-config.json -->
+          </select>
+        </div>
+
+        <!-- Filter Action Buttons -->
+        <div class="filter-buttons-group">
+          <button class="btn-apply-filters" id="btn-apply-filters">Apply filters</button>
+          <button class="btn-reset-filters" id="btn-reset-filters">Reset</button>
+          <button class="btn-quick-add-title" id="btn-open-add-title" title="Add a new movie/cartoon to this catalog">
+            <span>➕</span> Add Title
+          </button>
+        </div>
+      </div>
+
+      <!-- 6-Column Results Grid -->
+      <div class="search-results-grid" id="search-results-grid">
+        <!-- Rendered dynamically from data/search-catalog.json -->
+      </div>
+    </section>
+
+    <!-- 2. HOME HERO SHOWCASE VIEW (Lucifer & Categories - DEFAULT VIEW) -->
+    <div id="home-view-container">
+      <main class="hero-showcase" id="hero-showcase-container">
+        <!-- Rendered dynamically by app.js from data/hero.json -->
+      </main>
+
+      <section class="bottom-peek-curved-section">
+        <div id="bottom-curved-content">
+          <!-- Rendered dynamically by app.js from data/continue-watching.json & data/trends.json -->
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Cinema Video Trailer Modal -->
+  <div class="modal-backdrop" id="cinema-modal" role="dialog" aria-modal="true" aria-labelledby="cinema-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="cinema-modal-title">Trailer</h3>
+        <button class="modal-close-btn" id="cinema-modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="cinema-player-wrapper" id="cinema-player-container">
+        <!-- Dynamic video player iframe -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Episodes Explorer Modal -->
+  <div class="modal-backdrop" id="episodes-modal" role="dialog" aria-modal="true"
+    aria-labelledby="episodes-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="episodes-modal-title">Lucifer - Episodes</h3>
+        <button class="modal-close-btn" id="episodes-modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="episodes-grid-container" id="episodes-list-container">
+        <!-- Dynamic episode cards rendered from data/episodes.json -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Schema & Data Manager Button -->
+  <button class="floating-schema-btn" id="btn-open-schema-manager" title="Inspect & Edit Schemas">
+    <span>⚙️</span> Schema Manager
+  </button>
+
+  <!-- Interactive Schema & Data Manager Drawer Modal -->
+  <div class="modal-backdrop" id="schema-modal" role="dialog" aria-modal="true" aria-labelledby="schema-modal-title">
+    <div class="modal-container schema-modal-container">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="schema-modal-title">⚙️ Schema & Data Manager</h3>
+          <p style="font-size: 0.75rem; color: #888; margin-top: 2px;">Inspect and edit any section's schema and live
+            JSON dataset</p>
+        </div>
+        <button class="modal-close-btn" id="schema-modal-close" aria-label="Close modal">✕</button>
+      </div>
+
+      <!-- Schema Tabs Bar -->
+      <div class="schema-tabs-bar" id="schema-tabs-container">
+        <!-- Tab buttons populated by schema-manager.js -->
+      </div>
+
+      <!-- Schema Editor Body -->
+      <div class="schema-editor-body">
+        <div class="schema-help-text" id="schema-status-msg">
+          Edit any field below and click <strong>Apply Live Changes</strong> to update the UI on the fly, or
+          <strong>Download JSON</strong> to replace the file in your <code>data/</code> folder.
+        </div>
+        <textarea class="schema-json-textarea" id="schema-json-editor" spellcheck="false"></textarea>
+      </div>
+
+      <!-- Schema Editor Footer Actions -->
+      <div class="schema-editor-footer">
+        <button class="btn-pill btn-pill-outline" id="btn-schema-reset"
+          style="padding: 0.4rem 1.2rem; font-size: 0.75rem; border:1px solid rgba(255,255,255,0.2); border-radius:9999px; color:#fff;">
+          Reset Default
+        </button>
+        <div class="schema-action-group">
+          <button class="btn-pill btn-pill-outline" id="btn-schema-download"
+            style="padding: 0.4rem 1.2rem; font-size: 0.75rem; border:1px solid rgba(255,255,255,0.2); border-radius:9999px; color:#fff;">
+            📥 Download JSON
+          </button>
+          <button class="btn-pill btn-pill-primary" id="btn-schema-apply"
+            style="padding: 0.4rem 1.4rem; font-size: 0.75rem; background:#e50914; border-radius:9999px; color:#fff; font-weight:700;">
+            ✓ Apply Live Changes
+          </button>
+        </div>
+      </div>
+      <!-- Quick Add Title to Catalog Modal (Makes adding movies in future effortless) -->
+      <div class="modal-backdrop" id="add-title-modal" role="dialog" aria-modal="true"
+        aria-labelledby="add-title-modal-heading">
+        <div class="modal-container" style="max-width: 580px;">
+          <div class="modal-header">
+            <div>
+              <h3 class="modal-title" id="add-title-modal-heading">➕ Add New Title to Catalog</h3>
+              <p style="font-size:0.75rem; color:#888; margin-top:2px;">Add Shinchan movies, series, or cartoons to your
+                live catalog easily</p>
+            </div>
+            <button class="modal-close-btn" id="add-title-modal-close" aria-label="Close modal">✕</button>
+          </div>
+
+          <form id="add-title-form" style="padding:1.5rem 1.75rem; display:flex; flex-direction:column; gap:1rem;">
+            <div>
+              <label
+                style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">TITLE
+                *</label>
+              <input type="text" id="add-title-input" class="filter-control-input"
+                placeholder="e.g., Shinchan: Invasion!! Alien Shiriri" required />
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem;">
+              <div>
+                <label
+                  style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">RATING
+                  (0 - 10)</label>
+                <input type="number" step="0.1" min="0" max="10" id="add-rating-input" class="filter-control-input"
+                  value="7.5" required />
+              </div>
+              <div>
+                <label
+                  style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">YEAR</label>
+                <input type="number" id="add-year-input" class="filter-control-input" value="2025" required />
+              </div>
+              <div>
+                <label
+                  style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">TYPE</label>
+                <select id="add-type-select" class="filter-control-select">
+                  <option value="Movie">Movie</option>
+                  <option value="Series">Series</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+              <div>
+                <label
+                  style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">CATEGORY</label>
+                <input type="text" id="add-category-input" class="filter-control-input" value="Cartoon" />
+              </div>
+              <div>
+                <label
+                  style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">NETWORK
+                  / STUDIO</label>
+                <input type="text" id="add-network-input" class="filter-control-input" value="TV Asahi" />
+              </div>
+            </div>
+
+            <div>
+              <label
+                style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">POSTER
+                IMAGE URL OR PATH</label>
+              <input type="text" id="add-poster-input" class="filter-control-input"
+                placeholder="e.g., assets/images/poster_shinchan_spinoff.jpg"
+                value="assets/images/poster_shinchan_spinoff.jpg" required />
+            </div>
+
+            <div>
+              <label
+                style="display:block; font-size:0.75rem; font-weight:700; color:#b5afb2; margin-bottom:0.35rem;">SYNOPSIS</label>
+              <textarea id="add-synopsis-input" class="filter-control-input" rows="2"
+                placeholder="Brief synopsis..."></textarea>
+            </div>
+
+            <div style="display:flex; justify-content:flex-end; gap:0.75rem; margin-top:0.5rem;">
+              <button type="button" class="btn-reset-filters" id="btn-cancel-add-title">Cancel</button>
+              <button type="submit" class="btn-apply-filters">✓ Save to Catalog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Core Modular Scripts -->
+      <script src="assets/js/player.js"></script>
+      <script src="assets/js/schema-manager.js"></script>
+      <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

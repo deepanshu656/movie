@@ -1,0 +1,47 @@
+{
+  "seriesTitle": "Lucifer",
+  "currentSeason": 1,
+  "totalSeasons": 6,
+  "episodes": [
+    {
+      "episodeNumber": 1,
+      "title": "Pilot",
+      "duration": "45m",
+      "synopsis": "Upon leaving hell, Lucifer Morningstar takes up residence in Los Angeles where he helps Detective Chloe Decker solve the murder of a pop star.",
+      "thumbnailUrl": "assets/images/lucifer_hero_banner.jpg",
+      "progress": 100
+    },
+    {
+      "episodeNumber": 2,
+      "title": "Lucifer, Stay. Good Devil.",
+      "duration": "44m",
+      "synopsis": "Lucifer and Chloe work together to solve the murder of a paparazzo who caused the death of a movie star's son.",
+      "thumbnailUrl": "assets/images/tmdb_lucifer.jpg",
+      "progress": 80
+    },
+    {
+      "episodeNumber": 3,
+      "title": "The Would-Be Prince of Darkness",
+      "duration": "43m",
+      "synopsis": "When a 22-year-old future superstar quarterback finds a dead girl floating in his swimming pool, he turns to Lucifer for help.",
+      "thumbnailUrl": "assets/images/lucifer_season4_backdrop.jpg",
+      "progress": 40
+    },
+    {
+      "episodeNumber": 4,
+      "title": "Manly Whatnots",
+      "duration": "44m",
+      "synopsis": "Lucifer seeks Chloe's advice on seduction after a girl rejects his charms, while they investigate a missing person case.",
+      "thumbnailUrl": "assets/images/lucifer_s4_promo.jpg",
+      "progress": 0
+    },
+    {
+      "episodeNumber": 5,
+      "title": "Sweet Kicks",
+      "duration": "45m",
+      "synopsis": "Lucifer seduces a high-end shoe designer while investigating a fatal shooting at an underground streetwear fashion show.",
+      "thumbnailUrl": "assets/images/lucifer_hero_banner.jpg",
+      "progress": 0
+    }
+  ]
+}

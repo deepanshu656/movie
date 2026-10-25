@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HeroMovieSchema",
+  "description": "Schema for the hero featured movie/series banner with slider indicators and episode controls",
+  "type": "object",
+  "required": ["activeSlideIndex", "slides"],
+  "properties": {
+    "activeSlideIndex": {
+      "type": "integer",
+      "default": 8,
+      "description": "0-indexed active slide (8 corresponds to 09/10)"
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "badge", "rating", "year", "type", "duration", "quality", "synopsis"],
+        "properties": {
+          "id": { "type": "string" },
+          "badge": { "type": "string", "default": "LATEST UPDATES" },
+          "title": { "type": "string" },
+          "rating": { "type": "number", "default": 8.4 },
+          "year": { "type": "integer", "default": 2016 },
+          "type": { "type": "string", "default": "Series" },
+          "duration": { "type": "string", "default": "45 min" },
+          "quality": { "type": "string", "default": "1080p" },
+          "synopsis": { "type": "string" },
+          "backdropUrl": { "type": "string" },
+          "trailerUrl": { "type": "string" },
+          "totalEpisodes": { "type": "integer", "default": 93 },
+          "seasons": { "type": "integer", "default": 6 }
+        }
+      }
+    }
+  }
+}
